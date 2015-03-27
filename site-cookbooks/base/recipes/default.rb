@@ -3,7 +3,7 @@
 # Recipe:: default
 #
 # 
-%w{git curl}.each do |pkg|
+%w{git curl zip unzip}.each do |pkg|
   package pkg do
     action :install
   end

@@ -1,8 +1,10 @@
 {
   "run_list": [
+    "recipe[python]",
     "recipe[base]",
     "recipe[nvm]",
-    "recipe[nvm::grunt]"
+    "recipe[nvm::grunt]",
+    "recipe[aws-cli]"
   ],
   "automatic": {
     "ipaddress": "node-dev-env"
