@@ -1,0 +1,10 @@
+{
+  "run_list": [
+    "recipe[base]",
+    "recipe[nvm]",
+    "recipe[nvm::grunt]"
+  ],
+  "automatic": {
+    "ipaddress": "node-dev-env"
+  }
+}
