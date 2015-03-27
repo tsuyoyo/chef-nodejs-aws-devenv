@@ -4,7 +4,7 @@
 #
 #
 git "/usr/local/nvm" do
-  repository "https://github.com/creationix/nvm"
+  repository "git://github.com/creationix/nvm.git"
   notifies :run, "bash[nvm.sh]"
 end
 
