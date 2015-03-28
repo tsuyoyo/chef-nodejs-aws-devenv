@@ -22,3 +22,27 @@ python_pip "awscli"
 #  EOH
 #  action :run
 #end
+
+# Referred : https://docs.chef.io/resource_directory.html
+directory "/home/#{node['vagrant']['user']}/.aws" do
+  owner node['vagrant']['user']
+  group node['vagrant']['group']
+  mode 0755
+  action :create
+end
+
+# TODO : "/home/#{node[:user]}/redmine" <-- こんな書き方したい
+template "credentials" do
+  path "/home/vagrant/.aws/credentials"
+  owner "vagrant"
+  group "vagrant"
+  mode 0644
+end
+
+template "config" do
+  path "/home/vagrant/.aws/config"
+  owner "vagrant"
+  group "vagrant"
+  mode 0644
+end
+

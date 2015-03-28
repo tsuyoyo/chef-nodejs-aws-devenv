@@ -8,5 +8,22 @@
   ],
   "automatic": {
     "ipaddress": "node-dev-env"
+  },
+  "vagrant": {
+    "user": "vagrant",
+    "group": "vagrant"
+  },
+  "aws": {
+    "default": {
+      "accesskey": "DEFAULT_ACCESS_KEY",
+      "secretkey": "DEFAULT_SECRET_KEY",
+      "region": "us-east-1"
+    },
+    "user1": {
+      "accesskey": "USER1_ACCESS_KEY",
+      "secretkey": "USER1_SECRET_KEY",
+      "region": "us-west-2"
+    }
   }
 }
+
